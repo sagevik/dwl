@@ -143,6 +143,10 @@ static const Key keys[] = {
 	{ MODKEY|SHIFT,              XKB_KEY_i,          incnmaster,     {.i = -1} },
 	{ MODKEY,                    XKB_KEY_h,          setmfact,       {.f = -0.05f} },
 	{ MODKEY,                    XKB_KEY_l,          setmfact,       {.f = +0.05f} },
+	{ MODKEY|SHIFT,		     XKB_KEY_H,          setcfact,       {.f = +0.25f} },
+	{ MODKEY|SHIFT,		     XKB_KEY_L,          setcfact,       {.f = -0.25f} },
+	{ MODKEY|SHIFT,		     XKB_KEY_O,          setcfact,       {.f = 0.0f} },
+
 	{ MODKEY|SHIFT,		     XKB_KEY_Return,     zoom,           {0} },
 	{ MODKEY,                    XKB_KEY_b,          togglebar,      {0} },
 	{ MODKEY,                    XKB_KEY_Tab,        view,           {0} },
